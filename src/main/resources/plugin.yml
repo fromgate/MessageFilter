@@ -1,0 +1,11 @@
+name: MessageFilter
+main: me.fromgate.messagefilter.MessageFilter
+version: 0.3.2
+author: fromgate, fromgate@gmail.com
+depend: [ProtocolLib]
+commands:
+   msgfilter:
+      aliases: [mfilter, filter]
+      description: Message Filter command
+      usage: 
+           /msgfilter help
