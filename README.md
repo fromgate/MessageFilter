@@ -3,6 +3,10 @@ _A Minecraft (bukkit) plugin_
 
 This plugin brings to you ability to control message in your chat provided from any source. You can hide annoying message of plugin (forever or using cooldown to display it), change any message to another. You can even use MessageFilter as translation tool for plugins that not provides translation mechanics by itself.
 
+## Download
+Latest version available on BukkitDev:  
+https://dev.bukkit.org/projects/message-filter
+
 ## Video
 [![Video tutorial](https://img.youtube.com/vi/1JG9_OxcqZI/maxresdefault.jpg)](https://www.youtube.com/watch?v=1JG9_OxcqZI)
 
