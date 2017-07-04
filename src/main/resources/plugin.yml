@@ -1,6 +1,6 @@
 name: MessageFilter
 main: me.fromgate.messagefilter.MessageFilter
-version: 0.3.2
+version: 0.3.3
 author: fromgate, fromgate@gmail.com
 depend: [ProtocolLib]
 commands:

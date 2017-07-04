@@ -23,19 +23,6 @@
 
 package me.fromgate.messagefilter;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
-import java.util.logging.Logger;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Color;
@@ -59,6 +46,20 @@ import org.bukkit.scheduler.BukkitTask;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Random;
+import java.util.Set;
+import java.util.logging.Logger;
 
 @SuppressWarnings("deprecation")
 public abstract class FGUtilCore {
@@ -727,7 +728,7 @@ public abstract class FGUtilCore {
             if (f.exists()) lng.load(f);
             else {
                 InputStream is = plg.getClass().getResourceAsStream("/language/"+this.language+".lng");
-                if (is!=null) lng.load(is);
+                if (is!=null) lng.load(new InputStreamReader(is, "UTF-8"));
             }
         } catch (Exception e){
             e.printStackTrace();
